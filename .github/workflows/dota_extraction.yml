@@ -37,5 +37,5 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
       run: |
-        cd src/dota/full-load/stage
+        cd src/dota/full-load
         python extract-data-dota.py 
