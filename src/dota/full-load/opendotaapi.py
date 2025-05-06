@@ -378,17 +378,6 @@ class OpenDotaAPI:
         except Exception as e:
             print(f"Erro ao obter jogadores públicos: {str(e)}")
             return None
-
-    def get_rankings(self):
-        try:
-            response = requests.get(f"{self.base_url}/rankings")
-            if response.status_code == 200:
-                return response.json()
-            return None
-        except Exception as e:
-            print(f"Erro ao obter rankings: {str(e)}")
-            return None
-
     def get_hero_rankings(self):
         try:
             response = requests.get(f"{self.base_url}/heroes")
